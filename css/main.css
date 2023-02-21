@@ -265,7 +265,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 250px 100px;
-  max-width: 80%;
+  max-width: 70%;
   margin: auto;
   margin-top: 16px;
 }
@@ -305,4 +305,14 @@ textarea {
 .card-links img {
   max-width: 50px;
   padding: 10px;
+}
+
+.card-main a {
+  text-decoration: none;
+  color: orange;
+  font-weight: 700;
+}
+
+.card-main a:hover {
+  text-decoration: underline;
 }
