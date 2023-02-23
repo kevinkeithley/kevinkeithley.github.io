@@ -316,3 +316,13 @@ textarea {
 .card-main a:hover {
   text-decoration: underline;
 }
+
+.resume {
+  max-width: 30em;
+  margin: auto;
+}
+
+.bio {
+  max-width: 30em;
+  margin: auto;
+}
