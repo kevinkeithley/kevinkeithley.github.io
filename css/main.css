@@ -180,9 +180,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +193,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -288,7 +289,7 @@ textarea {
 .card-main {
   padding: 0px 16px;
   grid-row-start: 1;
-  border-top:#222222 solid 2px;
+  border-top: #222222 solid 2px;
   border-right: #222222 solid 2px;
   border-radius: 0px 20px;
 }
@@ -323,6 +324,67 @@ textarea {
 }
 
 .bio {
-  max-width: 30em;
+  max-width: 45em;
   margin: auto;
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+    "name name name"
+    "summary summary summary"
+    "principles principles principles"
+    "card-1 card-2 card-3";
+}
+
+.name {
+  grid-area: name;
+  text-align: center;
+}
+
+.summary {
+  grid-area: summary;
+  text-align: justify;
+}
+
+.principles {
+  grid-area: principles;
+}
+
+.principle-card {
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.principle-card:nth-of-type(1) {
+  grid-area: card-1;
+  background-color: #f9f9f9;
+}
+
+.principle-card:nth-of-type(2) {
+  grid-area: card-2;
+  background-color: #eef9f9;
+}
+
+.principle-card:nth-of-type(3) {
+  grid-area: card-3;
+  background-color: #f9f4ee;
+}
+
+.principle-card p:first-of-type {
+  font-weight: bold;
+}
+
+.principle-card p:nth-of-type(2) {
+  font-style: italic;
+}
+
+.principle-card::before {
+  content: "★";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 2em;
+  color: #ffcc00;
 }
