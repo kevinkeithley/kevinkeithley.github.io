@@ -378,8 +378,23 @@ textarea {
 /* Paragraph Styling */
 .principle-card p:first-of-type {
   font-weight: bold;
+  font-size: 1.25em;
+  /* Increase font size for titles */
+  margin-bottom: 0.5em;
+  /* Add spacing below title for clarity */
 }
 
 .principle-card p:nth-of-type(2) {
   font-style: italic;
+  font-weight: 600;
+  /* Increase font weight for better emphasis */
+  margin-bottom: 0.5em;
+  /* Add spacing below italicized paragraph */
+}
+
+.principle-card p:nth-of-type(3) {
+  font-weight: 600;
+  /* Increase font weight for better emphasis */
+  line-height: 1.5;
+  /* Improve readability with slightly larger line spacing */
 }
