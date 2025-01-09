@@ -385,8 +385,10 @@ textarea {
   position: absolute;
   bottom: -2px;
   /* Adjust spacing between text and underline */
+  left: 0;
+  /* Align the underline with the left edge of the text */
   width: 30%;
-  /* Length of the underline */
+  /* Length of the underline relative to the container */
   height: 4px;
   /* Thickness of the underline */
   background: orange;
