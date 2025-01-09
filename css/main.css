@@ -337,12 +337,10 @@ textarea {
 
 .name {
   grid-area: name;
-  text-align: center;
 }
 
 .summary {
   grid-area: summary;
-  text-align: justify;
 }
 
 .principles {
@@ -351,25 +349,22 @@ textarea {
 
 .principle-card {
   padding: 1em;
-  border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
+  color: white;
 }
 
 .principle-card:nth-of-type(1) {
-  grid-area: card-1;
-  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #ff6347, white);
 }
 
 .principle-card:nth-of-type(2) {
-  grid-area: card-2;
-  background-color: #eef9f9;
+  background: linear-gradient(135deg, #1e90ff, white);
 }
 
 .principle-card:nth-of-type(3) {
-  grid-area: card-3;
-  background-color: #f9f4ee;
+  background: linear-gradient(135deg, #32cd32, white);
 }
 
 .principle-card p:first-of-type {
@@ -380,11 +375,15 @@ textarea {
   font-style: italic;
 }
 
+
 .principle-card::before {
-  content: "★";
+  content: "";
   position: absolute;
   top: -10px;
   left: -10px;
-  font-size: 2em;
-  color: #ffcc00;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
