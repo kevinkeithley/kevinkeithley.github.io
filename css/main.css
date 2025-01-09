@@ -348,42 +348,31 @@ textarea {
 }
 
 .principle-card {
-  padding: 1em;
+  padding: 1.5em;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
   color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .principle-card:nth-of-type(1) {
-  background: linear-gradient(135deg, orange, #222222);
+  background: linear-gradient(135deg, orange, #555555);
 }
 
 .principle-card:nth-of-type(2) {
-  background: linear-gradient(135deg, #222222, orange);
+  background: linear-gradient(135deg, #555555 70%, orange);
 }
 
 .principle-card:nth-of-type(3) {
-  background: linear-gradient(135deg, #222222, orange);
+  background: linear-gradient(135deg, #555555 80%, orange);
 }
 
-/* Ribbon Decorator */
-.principle-card::before {
-  content: "Key";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(255, 165, 0, 0.8);
-  /* Slightly transparent orange */
-  color: #222222;
-  /* Dark text to match your color scheme */
-  padding: 0.3em 0.6em;
-  font-size: 0.9em;
-  font-weight: bold;
-  transform: rotate(-45deg) translate(-50%, -50%);
-  transform-origin: top left;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+/* Hover effect */
+.principle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Paragraph Styling */
