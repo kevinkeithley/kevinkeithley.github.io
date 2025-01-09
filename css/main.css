@@ -335,6 +335,24 @@ textarea {
     "card-1 card-2 card-3";
 }
 
+/* Responsive Design: Stack Cards on Smaller Screens */
+@media (max-width: 600px) {
+  .bio {
+    grid-template-areas:
+      "name"
+      "summary"
+      "principles"
+      "card-1"
+      "card-2"
+      "card-3";
+  }
+
+  .principle-card {
+    grid-column: span 1;
+    /* Ensure cards take up full width */
+  }
+}
+
 .name {
   grid-area: name;
   position: relative;
@@ -376,15 +394,15 @@ textarea {
 }
 
 .principle-card:nth-of-type(1) {
-  background: linear-gradient(135deg, orange, #555555);
+  background: linear-gradient(135deg, orange, #777777);
 }
 
 .principle-card:nth-of-type(2) {
-  background: linear-gradient(135deg, #555555 70%, orange);
+  background: linear-gradient(135deg, #777777 80%, orange);
 }
 
 .principle-card:nth-of-type(3) {
-  background: linear-gradient(135deg, #555555 80%, orange);
+  background: linear-gradient(135deg, #777777 80%, orange);
 }
 
 /* Hover effect */
