@@ -353,37 +353,44 @@ textarea {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
   color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .principle-card:nth-of-type(1) {
-  background: linear-gradient(135deg, #ff6347, #444);
+  background: linear-gradient(135deg, orange, #222222);
 }
 
 .principle-card:nth-of-type(2) {
-  background: linear-gradient(135deg, #1e90ff, #444);
+  background: linear-gradient(135deg, #222222, orange);
 }
 
 .principle-card:nth-of-type(3) {
-  background: linear-gradient(135deg, #32cd32, #444);
+  background: linear-gradient(135deg, #222222, orange);
 }
 
+/* Ribbon Decorator */
+.principle-card::before {
+  content: "Key";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 165, 0, 0.8);
+  /* Slightly transparent orange */
+  color: #222222;
+  /* Dark text to match your color scheme */
+  padding: 0.3em 0.6em;
+  font-size: 0.9em;
+  font-weight: bold;
+  transform: rotate(-45deg) translate(-50%, -50%);
+  transform-origin: top left;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
 
+/* Paragraph Styling */
 .principle-card p:first-of-type {
   font-weight: bold;
 }
 
 .principle-card p:nth-of-type(2) {
   font-style: italic;
-}
-
-
-.principle-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  transform: skew(-15deg);
 }
