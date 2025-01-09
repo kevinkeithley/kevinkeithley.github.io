@@ -356,15 +356,19 @@ textarea {
 }
 
 .principle-card:nth-of-type(1) {
-  background: linear-gradient(135deg, #ff6347, white);
+  background: linear-gradient(135deg, #ff6347, #444);
 }
 
 .principle-card:nth-of-type(2) {
-  background: linear-gradient(135deg, #1e90ff, white);
+  background: linear-gradient(135deg, #1e90ff, #444);
 }
 
 .principle-card:nth-of-type(3) {
-  background: linear-gradient(135deg, #32cd32, white);
+  background: linear-gradient(135deg, #32cd32, #444);
+}
+
+.principle-card {
+  color: white;
 }
 
 .principle-card p:first-of-type {
@@ -376,14 +380,13 @@ textarea {
 }
 
 
-.principle-card::before {
+.principle-card::after {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 20px;
-  height: 20px;
-  background: white;
-  border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skew(-15deg);
 }
