@@ -383,10 +383,8 @@ textarea {
 .name::after {
   content: "";
   position: absolute;
-  left: 50%;
   bottom: -2px;
   /* Adjust spacing between text and underline */
-  transform: translateX(-90%);
   width: 30%;
   /* Length of the underline */
   height: 4px;
