@@ -332,7 +332,8 @@ textarea {
     "name name name"
     "summary summary summary"
     "principles principles principles"
-    "card-1 card-2 card-3";
+    "card-1 card-2 card-3"
+    "experience experience experience";
 }
 
 /* Responsive Design: Stack Cards on Smaller Screens */
@@ -344,13 +345,18 @@ textarea {
       "principles"
       "card-1"
       "card-2"
-      "card-3";
+      "card-3"
+      "experience";
   }
 
   .principle-card {
     grid-column: span 1;
     /* Ensure cards take up full width */
   }
+}
+
+.experience {
+  grid-area: experience;
 }
 
 .name {
@@ -364,7 +370,6 @@ textarea {
   left: 50%;
   bottom: -2px;
   /* Adjust spacing between text and underline */
-  transform: translateX(-10%);
   width: 30%;
   /* Length of the underline */
   height: 4px;
