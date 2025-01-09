@@ -367,9 +367,6 @@ textarea {
   background: linear-gradient(135deg, #32cd32, #444);
 }
 
-.principle-card {
-  color: white;
-}
 
 .principle-card p:first-of-type {
   font-weight: bold;
