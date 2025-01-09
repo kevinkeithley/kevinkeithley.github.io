@@ -362,10 +362,10 @@ textarea {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -5px;
+  bottom: -2px;
   /* Adjust spacing between text and underline */
-  transform: translateX(-50%);
-  width: 50%;
+  transform: translateX(-10%);
+  width: 30%;
   /* Length of the underline */
   height: 4px;
   /* Thickness of the underline */
@@ -389,20 +389,20 @@ textarea {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .principle-card:nth-of-type(1) {
-  background: linear-gradient(135deg, orange, #777777);
+  background: linear-gradient(155deg, orange, #777777);
 }
 
 .principle-card:nth-of-type(2) {
-  background: linear-gradient(135deg, #777777 80%, orange);
+  background: linear-gradient(155deg, #777777 80%, orange);
 }
 
 .principle-card:nth-of-type(3) {
-  background: linear-gradient(135deg, #777777 80%, orange);
+  background: linear-gradient(155deg, #777777 80%, orange);
 }
 
 /* Hover effect */
