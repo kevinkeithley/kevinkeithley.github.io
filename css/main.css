@@ -456,3 +456,134 @@ textarea {
   line-height: 1.5;
   /* Improve readability with slightly larger line spacing */
 }
+
+/* Current portfolio styles */
+body {
+  background: #f4f1eb;
+  color: #252525;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a { color: #9a4f00; }
+
+.eyebrow {
+  color: #a85800;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  margin: 0 0 .5rem;
+  text-transform: uppercase;
+}
+
+.business-card {
+  background: #fffdf9;
+  border: 1px solid #d7d0c4;
+  border-radius: 20px;
+  box-shadow: 0 18px 55px rgba(35, 29, 20, .12);
+  grid-template-columns: minmax(220px, .85fr) 2fr;
+  grid-template-rows: auto auto;
+  margin: clamp(2rem, 9vh, 7rem) auto 2rem;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.card-sidebar {
+  background: #24231f;
+  border-radius: 0;
+  padding: 2.25rem;
+}
+
+.card-sidebar img {
+  border: 4px solid #d88728;
+  max-width: 100%;
+}
+
+.card-main {
+  border: 0;
+  padding: clamp(2rem, 5vw, 4.5rem);
+}
+
+.card-main h1 {
+  font-size: clamp(2.5rem, 6vw, 4.75rem);
+  letter-spacing: -.055em;
+  line-height: .98;
+  margin: 0 0 1.5rem;
+}
+
+.card-main > p:not(.eyebrow) {
+  color: #58534b;
+  font-size: 1.17rem;
+  line-height: 1.7;
+  max-width: 34rem;
+}
+
+.card-main .text-link { display: inline-block; margin-top: .5rem; }
+
+.card-links {
+  align-items: center;
+  border: 0;
+  border-top: 1px solid #e2ddd4;
+  display: flex;
+  gap: .5rem;
+  padding: 1rem clamp(2rem, 5vw, 4.5rem);
+}
+
+.card-links a {
+  align-items: center;
+  color: #393630;
+  display: flex;
+  font-size: .88rem;
+  font-weight: 700;
+  gap: .15rem;
+  text-decoration: none;
+}
+
+.card-links a:hover, .about a:hover { text-decoration: underline; }
+.card-links img { max-height: 28px; max-width: 28px; object-fit: contain; padding: 7px; }
+
+.about {
+  background: #fffdf9;
+  border-left: 1px solid #ded8ce;
+  border-right: 1px solid #ded8ce;
+  margin: 0 auto;
+  max-width: 880px;
+  min-height: 100vh;
+  padding: 2rem clamp(1.4rem, 7vw, 5.5rem) 3rem;
+}
+
+.about-nav, .about-footer, .about-footer div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-nav a, .about-footer a { font-weight: 750; text-decoration: none; }
+.about-intro { border-bottom: 1px solid #d7d0c4; padding: clamp(4rem, 12vh, 8rem) 0 3.5rem; }
+.about-intro h1 { font-size: clamp(3rem, 9vw, 6.5rem); letter-spacing: -.065em; line-height: .92; margin: 0 0 1.7rem; }
+.lede { color: #575149; font-size: clamp(1.35rem, 3vw, 1.9rem); line-height: 1.45; margin: 0; max-width: 730px; }
+.about-copy, .current-projects, .work-themes { padding: 3.5rem 0 1rem; }
+.about h2 { font-size: 1rem; letter-spacing: .12em; text-transform: uppercase; }
+.about-copy p { font-family: Georgia, "Times New Roman", serif; font-size: 1.18rem; line-height: 1.85; }
+.project-grid { display: grid; gap: 1rem; grid-template-columns: 1.35fr 1fr; }
+.project-card { background: #292722; color: #fffdf9; padding: clamp(1.4rem, 4vw, 2.25rem); }
+.project-featured { border-top: 4px solid #d88728; }
+.project-card h3 { font-size: 1.55rem; margin: .4rem 0 1rem; }
+.project-card p { color: #ded9d0; line-height: 1.65; }
+.project-card .project-type { color: #e4a45b; font-size: .72rem; font-weight: 800; letter-spacing: .12em; margin: 0; text-transform: uppercase; }
+.project-card a { color: #f0ad61; display: inline-block; font-weight: 750; margin-top: .5rem; text-decoration: none; }
+.theme-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); }
+.theme-grid article { background: #efe9df; border-top: 3px solid #d88728; padding: 1.25rem; }
+.theme-grid h3 { font-size: 1rem; margin-top: 0; }
+.theme-grid p { color: #5d574f; line-height: 1.55; margin-bottom: 0; }
+.about-footer { border-top: 1px solid #d7d0c4; margin-top: 3rem; padding-top: 1.4rem; }
+.about-footer div { gap: 1.2rem; }
+
+@media (max-width: 700px) {
+  .business-card { display: block; margin: 1rem; }
+  .card-sidebar { padding: 2rem; text-align: center; }
+  .card-sidebar img { max-width: 210px; }
+  .card-links { flex-wrap: wrap; justify-content: center; }
+  .theme-grid { grid-template-columns: 1fr; }
+  .project-grid { grid-template-columns: 1fr; }
+  .about-footer { align-items: flex-start; flex-direction: column; }
+}
